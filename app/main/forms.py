@@ -6,8 +6,7 @@ from wtforms.validators import Required
 class PitchForm(FlaskForm):  # inherits from the FlaskForm
     title = StringField('Pitch title', validators=[Required()])
     pitch = TextAreaField('Your Pitch', validators=[Required()])
-    my_category = SelectField('Category', choices=[('Technology', 'Technology'), ('Fiction', 'Fiction'), (
-        'Automotive', 'Automotive'), ('Science', 'Science'), ('Trends', 'Trends')], validators=[Required()])
+    my_category = SelectField('Category', choices=[('Technology', 'Technology'), ('Fiction', 'Fiction'), ('Automotive', 'Automotive')], validators=[Required()])
     submit = SubmitField('Live your life to the fullest!')
 
 
