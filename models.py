@@ -1,10 +1,7 @@
 from werkzeug.security import generate_password_hash, check_password_hash
-# implementation of methods (is_authenticated(), is_active(), is_anonymous(), get_id())
 from flask_login import UserMixin
 from . import login_manager, db
 
-
-# modifies the load_user function by passing a user_id to the function that queries the database and gets a User with that ID
 @login_manager.user_loader
 def load_user(user_id):
     # call back function that retrieves a user when a unique identifier is passed
@@ -21,14 +18,13 @@ class User(UserMixin, db.Model):
     # enable users to have better access to their accounts
     email = db.Column(db.String(255), unique=True, index=True)
     bio = db.Column(db.String(255))
-    profile_pic_path = db.Column(db.String())
     pass_secure = db.Column(db.String(255))
 
     # creation of a virtual column that connects to the foreign key.
     pitches = db.relationship('Pitch', backref='user', lazy='dynamic')
     comments = db.relationship('Comment', backref='user', lazy='dynamic')
 
-    @property  # write only class property password. This generates a password has & pass the hashed password as a value to the pass_secure column property to save to the database
+    @property  
     def password(self):
         # Blocks access to the password property.
         raise AttributeError('You cannot read the password attribute')
