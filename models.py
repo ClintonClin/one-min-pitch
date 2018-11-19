@@ -45,4 +45,46 @@ class User(UserMixin, db.Model):
     def __repr__(self):  # debugging mechanism
         return f'User {self.username}'
 
+# Pitch class that will define tha different pitches and categories.
+
+
+class Pitch(db.Model):
+    __tablename__ = 'pitches'
+    id = db.Column(db.Integer, primary_key=True)
+    pitch_content = db.Column(db.String())
+    pitch_category = db.Column(db.String(255))
+    # stipulates that this is a foreign key and is the ID of a Users Model
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+
+    def save_pitch(self):
+        """
+        function that saves a pitch
+        """
+        db.session.add(self)
+        db.session.commit()
+
+    @classmethod
+    def get_pitch(cls, id):
+        """
+        function that gets a pitch by id
+        """
+        pitches = Pitch.query.filter_by(id=id).all()
+        return pitches
+
+    @classmethod
+    def get_all_pitches(cls):
+        """
+        function that gets all the pitches
+        """
+        pitches = Pitch.query.order_by('-id').all()
+        return pitches
+
+    @classmethod
+    def get_category(cls, cat):
+        """
+        function that gets category through search
+        """
+        category = Pitch.query.filter_by(
+            pitch_category=cat).order_by('-id').all()
+        return category
 
