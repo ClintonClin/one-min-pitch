@@ -1,3 +1,4 @@
-from . import views, errors, forms
-from flask import Blueprint  # Import Blueprint class from flask.
+from flask import Blueprint
 main = Blueprint('main', __name__)
+from . import views, errors
+
