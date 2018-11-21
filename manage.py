@@ -15,7 +15,6 @@ manager.add_command('server', Server)
 
 # initialize Migrate class and pass in app instance & db SQLAlchemy instance.
 migrate = Migrate(app, db)
-# New manager command "db" in addition to passing in the MigrateCommand class
 manager.add_command('db', MigrateCommand)
 
 
