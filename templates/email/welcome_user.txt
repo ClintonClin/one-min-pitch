@@ -1,4 +1,0 @@
-Hello {{user.username}}
-Welcome to Pitch City application.
-I have received your credentials and your privacy is my major priority. Enjoy yourself!!
-Incase of bugs, please send me an email about it.
