@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+<!-- {% import 'macros.html' as macro %} -->
+<!-------Navbar block------->
+
+<!------Content block-------->
+{% block content %}
+<div class="container-fluid start-page">
+    <div class="row">
+        <div class="col-md-12 start">
+            <h1 class="animated pulse"> Welcome To Pitch City</h1>
+            <h2 class="animated pulse"> Motto: Be a pitcher, not a belly itcher </h2>
+            {% if current_user.is_authenticated%}
+            <button class="btn btn-success">
+                <a href="{{url_for('main.home')}}">Pitches</a>
+            </button>
+            {% else %}
+            <button class="btn btn-success">
+                <a href="{{url_for('auth.login')}}">Level In</a>
+            </button>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
