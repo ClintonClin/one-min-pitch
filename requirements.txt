@@ -17,6 +17,7 @@ Flask-SimpleMDE==0.3.0
 Flask-SQLAlchemy==2.3.2
 Flask-Uploads==0.2.1
 Flask-WTF==0.14.2
+gunicorn==19.9.0
 isort==4.3.4
 itsdangerous==1.1.0
 Jinja2==2.10
