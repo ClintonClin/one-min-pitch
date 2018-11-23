@@ -6,7 +6,7 @@ class Config:
     """
     SECRET_KEY = os.environ.get('SECRET_KEY')
     UPLOADED_PHOTOS_DEST = 'app/static/photos' #fjfj
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://clinton:admin@localhost/pitches'
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
     # mail config
@@ -27,7 +27,7 @@ class ProdConfig(Config):
     Args:
         Config: The parent configration class with General config settings
     """
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://clinton:admin@localhost/pitches'
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
 
 class DevConfig(Config):
@@ -36,7 +36,7 @@ class DevConfig(Config):
     Args:
          Config: The parent configuration class with General configuration settings
     """
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://clinton:admin@localhost/pitches'
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
     DEBUG = True
 # Dictionary
 config_options = {
