@@ -1,0 +1,43 @@
+/* *{
+    background-color: black;
+} */
+
+.pulse{
+    font-family: 'Graduate', cursive;
+    font-size:150px;
+    color: red;
+    text-align: center;
+
+}
+.btn btn-success{
+    font-family: 'Faster One', cursive;
+}
+.fourOfour{
+    font-family: 'Wallpoet',
+    cursive;
+}
+.pitchit-form{
+    font-family: 'Iceland',
+    cursive;
+    font-size:70px;
+}
+.navbar navbar-default navbar-fixed-top {
+    font-family: 'Nova Square',cursive;
+}
+.navbar-brand{
+    font-family: 'Russo One',
+    sans-serif;
+}
+.dropdown{
+    font-family: 'Russo One',
+    sans-serif;
+}
+.nav-item {
+     font-family: 'Russo One',
+     sans-serif;
+}
+#newuser{
+    font-family: 'Iceland',
+    cursive;
+    font-size:35px;
+}
