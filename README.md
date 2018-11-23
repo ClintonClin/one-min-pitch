@@ -32,12 +32,10 @@ Click [here]( https://pitch-mojo.herokuapp.com/) to see the live site
 
 ## Technologies used
    - [x] [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
-    - Python 3.6
-    - HTML
-    - Bootstrap
-    -Postgresql
-    -Heroku(hosting)
-
+  - [x] [![Pip](https://img.shields.io/badge/pypi-v18.1-blue.svg)](https://pypi.org/project/pip/)
+- [x] [![Virtualenv](https://img.shields.io/badge/virtualenv-16.1.0-brightgreen.svg)](https://virtualenv.pypa.io/en/latest/installation/)
+- [x] [![Flask](https://img.shields.io/badge/flask-1.0.2-lightgrey.svg)](http://flask.pocoo.org/)
+- [x] [![PostgreSQL](https://img.shields.io/badge/postgreSQL-11.1-darkblue.svg)](https://www.postgresql.org/)
 ### Create a Virtual Environment
 Run the following commands in the same terminal:
 `sudo apt-get install python3.6-venv`
