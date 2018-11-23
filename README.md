@@ -31,11 +31,13 @@ Click [here]( https://pitch-mojo.herokuapp.com/) to see the live site
     - pip3 install -r requirements (dependencies)
 
 ## Technologies used
-   - [x] [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
-  - [x] [![Pip](https://img.shields.io/badge/pypi-v18.1-blue.svg)](https://pypi.org/project/pip/)
-- [x] [![Virtualenv](https://img.shields.io/badge/virtualenv-16.1.0-brightgreen.svg)](https://virtualenv.pypa.io/en/latest/installation/)
-- [x] [![Flask](https://img.shields.io/badge/flask-1.0.2-lightgrey.svg)](http://flask.pocoo.org/)
-- [x] [![PostgreSQL](https://img.shields.io/badge/postgreSQL-11.1-darkblue.svg)](https://www.postgresql.org/)
+   [![HTML5](https://img.shields.io/badge/html-html5-e34f26.svg)](https://www.w3schools.com/html/html5_intro.asp)
+[![Bootstrap](https://img.shields.io/badge/bootstrap-4.0.0-purple.svg)](https://getbootstrap.com/)
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Git](https://img.shields.io/badge/git-2.17.1-rgb(245%2C%2077%2C%2039).svg)](https://git-scm.com/)
+[![Flask](https://img.shields.io/badge/flask-1.0.2-lightgrey.svg)](http://flask.pocoo.org/)
+[![PostgreSQL](https://img.shields.io/badge/postgreSQL-11.1-darkblue.svg)](https://www.postgresql.org/)
+[![Pip](https://img.shields.io/badge/pypi-v18.1-blue.svg)](https://pypi.org/project/pip/)
 ### Create a Virtual Environment
 Run the following commands in the same terminal:
 `sudo apt-get install python3.6-venv`
