@@ -4,7 +4,7 @@ from app import create_app, db
 from app.models import User, Pitch, Comment
 
 #
-app = create_app('development')
+app = create_app('production')
 
 manager = Manager(app)
 manager.add_command('server', Server)
