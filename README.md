@@ -18,6 +18,8 @@ This application is meant to display various pitches of different categories. A 
 | Fiction category | Click on the `Fiction` category | Goes to the `Fiction` page |
 | Automotive category | Click on the `Automotive` category | Goes to the`Automotive` page |
 
+Click [here]( https://pitch-mojo.herokuapp.com/) to see the live site
+
 ## Prerequsites
     - Python 3.6 required
 
