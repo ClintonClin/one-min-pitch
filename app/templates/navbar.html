@@ -1,10 +1,12 @@
 <div class="container">
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         {% if current_user.is_authenticated%}
-        <a class="navbar-brand" href="/home">Pitch</a>
+        <a class="navbar-brand" href="/home"></a>
         {% else %}
-        <a class="navbar-brand" href="/">Pitch</a>
+        <a class="navbar-brand" href="/"></a>
         {% endif %}
+        <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
         <div class="container-fluid"> 
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -13,19 +15,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"> Pitch City </a>
+                <a class="navbar-brand" href="/"> <span style="font-size:150%; color:red;">Pitch Mojo</span> </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav nav-pills nav-justified">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/">| Home |</a>
+                        <a class="nav-link active" href="/"><span style="font-size:150%; color:red;"> Home </span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">| About |</a>
-                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#"> About </a>
+                    </li> -->
                     <li class="dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                            aria-expanded="false">| Categories |</a>
+                            aria-expanded="false"><span style="font-size:150%; color:red;"> Categories </span></a>
                         <ul class="dropdown-menu" style="font-size:20px">
                             <li><a href="/category/Technology">Technology</a></li>
                             <li role="separator" class="divider"></li>
@@ -37,7 +39,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                            aria-expanded="false">| User |</a>
+                            aria-expanded="false"><span style="font-size:150%; color:red;"> User</span> </a>
                         <ul class="dropdown-menu" style="font-size:20px">
                             {% if current_user.is_authenticated%}
                             <li class="nav-item">
@@ -45,16 +47,16 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url_for('auth.logout')}}">
-                                    <i class="fa fa-sign-out"></i> Pitch out</a>
+                                    <i class="fa fa-sign-out"></i> Sign out</a>
                             </li>
                             {% else %}
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url_for('auth.login')}}">
-                                    <i class="fa fa-sign-in"></i> Pitch In</a>
+                                    <i class="fa fa-sign-in"></i> Sign In</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url_for('auth.register')}}">
-                                    <i class="fa fa-user-plus"></i> Pitch Up</a>
+                                    <i class="fa fa-user-plus"></i> Register</a>
                             </li>
                             {% endif %}
                             <!--<li><a href="#/log-in">Log-in</a></li>-->

@@ -17,7 +17,7 @@
                 {% if user == current_user %}
                 <form action="{{url_for('main.update_pic',uname=user.username)}}" method="post" enctype="multipart/form-data">
                     <input type="file" name="photo" class="form-control" required>
-                    <input type="submit" style="color:red">
+                    <input type="submit" style="color:rgb(45, 24, 165)">
                 </form>
                 {% endif %}
             </div>
