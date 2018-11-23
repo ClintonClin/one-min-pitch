@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="card">
+        <br>
+        <br>
+        <br>
+        {{macro.displayCategory(category)}}
+    </div>
+</div>
+{% endblock %}
