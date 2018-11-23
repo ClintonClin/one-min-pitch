@@ -1,4 +1,4 @@
-# pitch Mojo
+# Pitch Mojo
 This is a simple python-based application that allows users to views pitches made, comment on the pitches if they are logged in, vote and add their own pitch. 
 
 #### By **[Clinton Okerio](https://github.com/ClintonClin)**
@@ -14,9 +14,9 @@ This application is meant to display various pitches of different categories. A 
 ## Specifications
 | Behavior            | Input                         | Output                        | 
 | ------------------- | ----------------------------- | ----------------------------- |
-| Technology cat | Click on the `Technology` category | Goes to the `Technology` page |
-| Fiction cat | Click on the `Fiction` category | Goes to the `Fiction` page |
-| Automotive cat | Click on the `Automotive` category | Goes to the`Automotive` page |
+| Technology category | Click on the `Technology` category | Goes to the `Technology` page |
+| Fiction category | Click on the `Fiction` category | Goes to the `Fiction` page |
+| Automotive category | Click on the `Automotive` category | Goes to the`Automotive` page |
 
 ## Prerequsites
     - Python 3.6 required
@@ -60,7 +60,7 @@ Open the browser on `http://localhost:5000/`
 
 ### [License](LICENSE)
 
-Copyright <2018> <CLINTON OKERIO>
+Copyright 2018 CLINTON OKERIO
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
