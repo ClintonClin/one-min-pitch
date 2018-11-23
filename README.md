@@ -31,7 +31,7 @@ Click [here]( https://pitch-mojo.herokuapp.com/) to see the live site
     - pip3 install -r requirements (dependencies)
 
 ## Technologies used
-    - [x] [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+   - [x] [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
     - Python 3.6
     - HTML
     - Bootstrap
